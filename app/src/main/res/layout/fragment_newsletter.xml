@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".NewsletterFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/counterNoteValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Add a note"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notesTextView" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/removeNote"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="38dp"
+            android:backgroundTint="@color/blue"
+            android:text="- 1 note"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/counterNoteValue"
+            app:layout_constraintVertical_bias="0.168" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddNote"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="38dp"
+            android:backgroundTint="@color/blue"
+            android:text="+ 1 note"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/back_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.963"
+            app:layout_constraintStart_toEndOf="@+id/removeNote"
+            app:layout_constraintTop_toBottomOf="@+id/counterNoteValue"
+            app:layout_constraintVertical_bias="0.168" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/continueButton"
+            android:layout_width="350sp"
+            android:layout_height="50sp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/blue"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/notesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="How many tasks would you like to do today?"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/counterNoteValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back_button"
+            android:layout_width="350sp"
+            android:layout_height="50sp"
+            android:layout_marginBottom="7dp"
+            android:backgroundTint="#0329F8"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/continueButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
