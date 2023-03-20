@@ -71,7 +71,7 @@ class NewsletterFragment : Fragment() {
 
         // OnClick ViewModel Value -1
         btnRemoveNote.setOnClickListener() {
-            noteViewModel.removeNote()
+               noteViewModel.removeNote()
         }
 
 

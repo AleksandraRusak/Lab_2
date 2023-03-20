@@ -27,7 +27,11 @@ class NoteViewModel : ViewModel() {
     fun removeNote() {
         _notes.update {
                 state -> state.copy(
-            counterNoteValue = state.counterNoteValue - 1
+            counterNoteValue = if (state.counterNoteValue > 0) {
+                state.counterNoteValue - 1
+            } else {
+                0
+            }
         )
 
         }
