@@ -1,5 +1,3 @@
-<img width="744" alt="Screenshot 2023-06-07 at 15 15 15" src="https://github.com/AleksandraRusak/Lab_2/assets/112869405/e6dba5d4-8773-424d-9149-54da684631e1">
-# Lab_2
 
 The app does not crash. It is possible to navigate between views.
 1. Main Activity
@@ -18,3 +16,6 @@ The app does not crash. It is possible to navigate between views.
 • When we press SUBMIT, a Snackbar appears with an action for 'UNDO'. If we press UNDO, this email is removed from the ArrayList.
 
 Each activity contains meaningful components and is not empty. For example, Main has some form of button and TextView for presentation. Constraints are applied to all components. Components are not nested within each other. Navigation Controller - It is possible to navigate between activities. The project includes one ViewModel object.
+
+<img width="744" alt="Screenshot 2023-06-07 at 15 15 15" src="https://github.com/AleksandraRusak/Lab_2/assets/112869405/e6dba5d4-8773-424d-9149-54da684631e1">
+# Lab_2
